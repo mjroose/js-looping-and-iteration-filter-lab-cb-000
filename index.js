@@ -6,3 +6,9 @@ const findMatching = (drivers, query) => {
     return driver.toLowerCase() === lowerCaseQuery;
   });
 };
+
+const fuzzyMatch = (drivers, substr) => {
+  return drivers.filter((driver) => {
+    return !driver.indexOf(substr);
+  });
+};

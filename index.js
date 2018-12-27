@@ -12,3 +12,9 @@ const fuzzyMatch = (drivers, substr) => {
     return !driver.indexOf(substr);
   });
 };
+
+const matchName = (drivers, nameToMatch) => {
+  return drivers.filter((driver) => {
+    return driver === nameToMatch;
+  });
+};

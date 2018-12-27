@@ -2,8 +2,9 @@
 const findMatching = (drivers, query) => {
   const lowerCaseQuery = query.toLowerCase();
 
-  return drivers.filter( (driver) => {
+  const matchingDrivers = drivers.filter( (driver) => {
     driver.toLowerCase() === lowerCaseQuery
   });
-  
+  console.log("Matching drivers: " + matchingDrivers);
+  return matchingDrivers;
 };
